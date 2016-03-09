@@ -1,0 +1,454 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Lunes Santo (Cofradía Cristo "El Morenet" Patrón de los Hombres del Mar)
+			</div>
+			<div class="subtitulos_procesion">
+				21 de Marzo - Lunes Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>18:30h</b> desde la Ermita Virgen del Socorro.
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			Gran dificultad a la salida del paso de la ermita y subida por las escaleras hasta la calle Virgen del Socorro.
+			<br>
+			Regreso por el paseo Gómiz, junto al mar, y subida de la procesión por la pasarela peatonal de la playa del Postiguet.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Cofradía Cristo "El Morenet" Patrón de los Hombres del Mar
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/cofradia_cristo_morenet_patron_hombres_mar.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta monacal de color azul Alicante. Casulla blanca. Cíngulo rojo. Sandalias monacales negras. Guantes y calcetines blancos.</br>
+			Costaleros: Vesta igual que los hermanos de fila. Calcetines y zapatos negros.
+			<img src="./resources/habitos/cristo_morenet_patron_hombres_mar.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Cristo "El Morenet" de los Hombres del Mar
+		</div>
+		
+		<div class="informacion_pasos">
+			Autor: Antonio Carrasco Pastor
+			<br>
+			Fecha: 2000
+			<br><br>
+			En el año 2000 estrenaron la Cruz de Guía. La imagen del Cristo se puede venerar en la Ermita de la Virgen del Socorro. 
+			<br><br>
+			<img src="./resources/pasos/cristo_morenet_patron_hombres_mar.jpg" class="imagenes_pasos" />			
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida y llegada en la Ermita Virgen del Socorro.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_morenet_mar" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_morenet_mar").gmap3({
+					map:{
+						options:{
+						center:[38.346487, -0.478235],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.349538, -0.474119], data:"Ermita Virgen del Socorro"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.349538, -0.474119], // salida
+							[38.349530, -0.474280],
+							[38.349179, -0.474394],
+							[38.348852, -0.474652],
+							[38.348358, -0.475092],
+							[38.347900, -0.475554],
+							[38.347168, -0.476510],
+							[38.346621, -0.477368],
+							[38.346527, -0.477356], // ramiro
+							[38.346370, -0.477562],
+							[38.346306, -0.478290],
+							[38.346152, -0.478898],
+							[38.346050, -0.479128], // jorge juan
+							[38.345396, -0.480609],
+							[38.345457, -0.481209], // pasaje
+							[38.345370, -0.481439], // santisima faz
+							[38.345160, -0.481895], // mayor
+							[38.344912, -0.482508],
+							[38.345245, -0.482757], // muñoz
+							[38.345397, -0.482872], // penalva
+							[38.345858, -0.483139], // labradores
+							[38.346633, -0.483625],
+							[38.346876, -0.483812], // san cristobal
+							[38.347143, -0.484000], // primo rivera
+							[38.347624, -0.484527],
+							[38.347750, -0.484758], // rambla
+							[38.347655, -0.484726],
+							[38.347563, -0.485292], // sorolla
+							[38.347107, -0.484929], // tomas lopez
+							[38.346773, -0.484707],
+							[38.346779, -0.484578],
+							[38.346840, -0.484504], // rambla
+							[38.346400, -0.484366],
+							[38.345996, -0.484131],
+							[38.344669, -0.483410],
+							[38.344211, -0.483114],
+							[38.343782, -0.482902],
+							[38.343539, -0.482826],
+							[38.344098, -0.481544], // paseo españa
+							[38.344247, -0.481111],
+							[38.344431, -0.480474],
+							[38.344705, -0.479993], // plaza del mar
+							[38.344936, -0.479505],
+							[38.344818, -0.478892], // gomiz
+							[38.345068, -0.478554],
+							[38.346133, -0.476908],
+							[38.346210, -0.476874],
+							[38.346279, -0.476957], // playa
+							[38.347037, -0.476100],
+							[38.347401, -0.475592],
+							[38.347910, -0.474826],
+							[38.348231, -0.474261],
+							[38.348755, -0.474701],
+							[38.349020, -0.474522],
+							[38.349267, -0.474374],
+							[38.349531, -0.474249],
+							[38.349537, -0.474135] // ermita	
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Calle Virgen del Socorro
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle Virgen del Socorro, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle de Fray Juan Rico
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle de Fray Juan Rico, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Plaza Paseíto Ramiro
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Plaza Paseíto Ramiro, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle Jorge Juan
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Jorge Juan, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			2º Pórtico Consistorial
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Pasaje Pórtico II del Consist, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Plaza Santísima Faz
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Plaza Santísima Faz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Plaza del Abad Penalva
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Calle Labradores
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Calle Labradores, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Plaza San Cristobal
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Plaza San Cristobal, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Calle General Primo de Rivera
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle General Primo de Rivera, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Calle Pintor Sorolla
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Pintor Sorolla, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Calle Tomás López Torregrosa
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Calle Tomás López Torregrosa, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			Carrera Oficial
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_19" class="punto_a_ruta">
+			Paseo Explanada de España
+		</div>
+		<script>
+			$("#ov_place_19").click(function(e){
+				show_geoloc("Passeig Esplanada d'Espanya, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_20" class="punto_a_ruta">
+			Plaza Puerta del Mar
+		</div>
+		<script>
+			$("#ov_place_20").click(function(e){
+				show_geoloc("Plaza Puerta del Mar, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_21" class="punto_a_ruta">
+			Paseo de Gomiz
+		</div>
+		<script>
+			$("#ov_place_21").click(function(e){
+				show_geoloc("Paseo de Gomiz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_22" class="punto_a_ruta">
+			Pasarela de la playa
+		</div>
+		<script>
+			$("#ov_place_22").click(function(e){
+				show_geoloc("Paseo de Gomiz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_23" class="punto_a_ruta">
+			Escalera de la playa
+		</div>
+		<script>
+			$("#ov_place_23").click(function(e){
+				show_geoloc("Paseo de Gomiz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_24" class="punto_a_ruta">
+			Calle Virgen del Socorro
+		</div>
+		<script>
+			$("#ov_place_24").click(function(e){
+				show_geoloc("Calle Virgen del Socorro, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_25" class="punto_a_ruta">
+			Ermita Virgen del Socorro
+		</div>
+		<script>
+			$("#ov_place_25").click(function(e){
+				show_geoloc("Calle Virgen del Socorro, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

@@ -1,0 +1,358 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Martes Santo (Hermandad de Nuestro Padre Jesús)
+			</div>
+			<div class="subtitulos_procesion">
+				22 de Marzo - Martes Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>21:00h</b> desde S.I. Concatedral San Nicolás de Bari.
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			Salida y entrada de los dos pasos por la puerta de la concatedral de San Nicolás y recorrido por el casco antiguo. Recorrido por la carrera oficial.
+			<br>
+			Encuentro de los dos pasos al finalizar la procesión en la plaza del Abad Penalva, frente a la concatedral de San Nicolás.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Hermandad de Nuestro Padre Jesús
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/hermandad_nuestro_padre_jesus.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta y capirote morados. Cíngulo amarillo. Guantes y calcetines blancos. Zapatos negros. Escudo de la hermandad en el capirote. Medalla de la hermandad. </br>
+			Costaleros: Vesta morada, con escudo de la hermandad en el pecho. Cíngulo amarillo. Guantes y calcetines blancos. Zapatos negros. Medalla de la hermandad.
+			<img src="./resources/habitos/nuestro_padre_jesus.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Nuestro Padre Jesús
+		</div>
+		
+		<div class="informacion_pasos">
+			La imagen de Ntro. Padre Jesús está ubicada en una capilla en el lateral izquierdo de la Concatedral de San Nicolás, donde recibe culto.		
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Santísima Virgen de las Penas
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida y llegada en S.I. Concatedral San Nicolás de Bari.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_padre_jesus" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_padre_jesus").gmap3({
+					map:{
+						options:{
+						center:[38.345573, -0.483192],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.345448, -0.482512], data:"S.I.Concatedral San Nicolás de Bari"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.345448, -0.482512], // salida
+							[38.345399, -0.482880], // plaza abad penalva
+							[38.345237, -0.482763], // muñoz
+							[38.344906, -0.482513], // mayor
+							[38.345366, -0.481457],
+							[38.345521, -0.481534], // santisima faz
+							[38.345634, -0.481595], // san agustin
+							[38.345707, -0.481612],
+							[38.345964, -0.481659],
+							[38.346069, -0.481674], // montengon
+							[38.346069, -0.481972],
+							[38.346030, -0.482349], // san pascual
+							[38.345951, -0.482833],
+							[38.345856, -0.483127], // labradores
+							[38.346643, -0.483607],
+							[38.347137, -0.483964], // san cristobal
+							[38.347604, -0.484525], // primo rivera
+							[38.347762, -0.484753], // rambla
+							[38.346370, -0.484343],
+							[38.345965, -0.484131],
+							[38.344579, -0.483365],
+							[38.344894, -0.482515], // mayor
+							[38.345236, -0.482739], // muñoz
+							[38.345393, -0.482875], // abad penalva
+							[38.345438, -0.482496] // concatedral
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			S.I. Concatedral San Nicolás de Bari
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Plaza del Abad Penalva
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Plaza Santísima Faz
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Plaza Santísima Faz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Calle San Agustín
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle San Agustín, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Calle Montengón
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Calle Montengón, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle San Pascual
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle San Pascual, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Calle Labradores
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Calle Labradores, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Plaza San Cristobal
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Plaza San Cristobal, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Calle General Primo de Rivera
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Calle General Primo de Rivera, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Plaza del Abad Penalva
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			S.I. Concatedral San Nicolás de Bari
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

@@ -1,0 +1,313 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Jueves Santo (Pontificia, Real, Ilústre, Venerable y Salesiana Hermandad Sacramental de la Santa Cena)
+			</div>
+			<div class="subtitulos_procesion">
+				24 de Marzo - Jueves Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>19:30h</b> desde el Patio de la Casa de la Familia Salesiana (Parroquia María Auxiliadora).
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			Ver la salida en la calle Catedrático Ferré Vidiella.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Pontificia, Real, Ilústre, Venerable y Salesiana Hermandad Sacramental de la Santa Cena
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/pontificia_real_ilustre_venerable_salesiana_hermandad_sacramental_santa_cena.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta y capirote marfil. Capa, cíngulo y zapatillas rojas. Guantes y calcetines blancos. </br>
+			Costaleros: Hábito monacal burdeos. Cíngulo cardenalicio marfil. Guantes, calcetines y zapatos negros.
+			<img src="./resources/habitos/santa_cena.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Santa Cena
+		</div>
+		<div class="subtitulo_hermandad">
+			Santísimo Cristo de la Caída
+		</div>
+		<div class="subtitulo_hermandad">
+			Santísimo Cristo de la Juventud
+		</div>
+		<div class="subtitulo_hermandad">
+			María, Madre de Misericordia Auxiliadora del Pueblo Cristiano
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida en el Patio de la Casa de la Familia Salesiana (Parroquia María Auxiliadora) y llegada en la Rambla de Méndez Núñez con el Paseo Explanada de España.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_sacramental_santa_cena" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_sacramental_santa_cena").gmap3({
+					map:{
+						options:{
+						center:[38.345530, -0.487483],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.346176, -0.493232], data:"Patio de la Casa de la Familia Salesiana (Parroquia María Auxiliadora)"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.346176, -0.493232], // salida
+							[38.346531, -0.492377], // san juan bosco
+							[38.345635, -0.491739], // tucuman
+							[38.345722, -0.491488], // avenida de la estacion
+							[38.346016, -0.491098],
+							[38.346157, -0.491045], // plaza luceros
+							[38.346271, -0.490921],
+							[38.346337, -0.490775],
+							[38.346339, -0.490614],
+							[38.346264, -0.490345],
+							[38.346266, -0.490177],
+							[38.346780, -0.488680], // alfonso el sabio
+							[38.347112, -0.487878],
+							[38.347731, -0.486165],
+							[38.347621, -0.486099],
+							[38.346950, -0.485649], // constitucion
+							[38.346196, -0.485086],
+							[38.346216, -0.484944], // duque de zaragoza
+							[38.346362, -0.484455],
+							[38.346414, -0.484366], // rambla
+							[38.345967, -0.484140],
+							[38.345584, -0.483956],
+							[38.345249, -0.483745],
+							[38.344812, -0.483489],
+							[38.344229, -0.483123],
+							[38.343841, -0.482928],
+							[38.343540, -0.482823] // explanada España
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Patio de la Parroquia de María Auxiliadora
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle San Juan Bosco, 7, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle Catedratico Ferre Vidiella
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Catedratico Ferre Vidiella, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle San Juan Bosco
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle San Juan Bosco, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle del Tucumán
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle del Tucumán, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Avenida de la Estación (Encuentro de los Tronos de la Hermandad)
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Avenida de la Estación, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Plaza de los Luceros
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Plaza de los Luceros, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Avenida de Alfonso X El Sabio
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Avenida de Alfonso X El Sabio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Avenida de la Constitución
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Avenida de la Constitución, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Calle Duque de Zaragoza
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Calle Duque de Zaragoza, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Rambla de Méndez Núñez (Carrera Oficial)
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Paseo Explanada de España
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Passeig Esplanada d'Espanya, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

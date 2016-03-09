@@ -1,0 +1,1122 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_1" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_2" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_1").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_2").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited">
+		
+		<div id="ov_calendar_container">
+	
+			<!--Decorative -->
+			<div class="ov_white_line_2"> </div>
+			<div class="ov_text_12" style="text-align:center">MARZO</div>
+			<div class="ov_white_line_2"> </div>
+			
+			<div class="hollow_10px"> </div>		
+			<!--Decorative -->
+			
+			<div id="ov_calendar_items_container">	
+						
+				<div id="ov_box_10_20_mar" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_1">
+						Domingo
+					</div>
+					<div class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_1">
+						20
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_20_mar").click(function(e){
+						selected_day_in_proce_list=20;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_21_mar" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_2">
+						Lunes
+					</div>
+					<div class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_2">
+						21
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_21_mar").click(function(e){
+						selected_day_in_proce_list=21;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_22_mar" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_3">
+						Martes
+					</div>
+					<div class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_3">
+						22
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_22_mar").click(function(e){						
+						selected_day_in_proce_list=22;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_23_mar" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_4">
+						Miércoles
+					</div>
+					<div class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_4">
+						23
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_23_mar").click(function(e){						
+						selected_day_in_proce_list=23;
+						calculate_day();	
+					});
+				</script>
+				
+				<div class="ov_clear_floats"> </div>
+				
+				<div id="ov_box_10_24_mar" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_5">
+						Jueves
+					</div>
+					<div class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_5">
+						24
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_24_mar").click(function(e){					
+						selected_day_in_proce_list=24;
+						calculate_day();	
+					});
+				</script>	
+				
+				<div id="ov_box_10_25_mar" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_6">
+						Viernes
+					</div>
+					<div class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_6">
+						25
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_25_mar").click(function(e){					
+						selected_day_in_proce_list=25;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_26_mar" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_7">
+						Sábado
+					</div>
+					<div class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_7">
+						26
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_26_mar").click(function(e){					
+						selected_day_in_proce_list=26;
+						calculate_day();	
+					});
+				</script>
+				
+				<div id="ov_box_10_27_mar" class="ov_box_10">
+					<div class="ov_text_09" id="ov_text_09_8">
+						Domingo
+					</div>
+					<div class="ov_vertical_space_03">&nbsp;</div>
+					<div class="ov_text_10" id="ov_text_10_8">
+						27
+					</div>
+				</div>
+				<script>
+					$("#ov_box_10_27_mar").click(function(e){
+						selected_day_in_proce_list=27;
+						calculate_day();	
+					});
+				</script>
+				
+				<div class="ov_clear_floats">&nbsp;</div>		
+					
+			</div>
+			
+			<!--Decorative -->
+			<div class="ov_white_line_2"> </div>
+			
+			<div class="hollow_10px"> </div>		
+			<!--Decorative -->
+	
+		</div>
+		
+		<div id="proce_list_container">
+	
+			<div class="hollow_10px"> </div>
+			<div class="hollow_10px"> </div>	
+			
+			<div id="ov_zone_13_20_mar" class="ov_zone_13">
+				
+				<div id="ov_box_13_1" class="ov_box_13">
+					<div id="ov_box_14_1" class="ov_box_14">
+						<div id="ov_text_12_1" class="ov_text_12">
+							HERMANDAD DE JESÚS TRIUNFANTE
+						</div>
+						<div id="ov_text_13_1" class="ov_text_13">
+							Día 20
+						</div>
+					</div>
+					<div id="ov_box_15_1" class="ov_box_15">
+						<div id="ov_text_15_1" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_1" class="ov_text_14">
+							11:30h<br>
+							Jardines de la Exma. Diputación Provincial de Alicante
+						</div>
+						<div id="ov_box_16_1" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_1").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_jesus_triunfante_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+								
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+										
+				<div id="ov_box_13_2" class="ov_box_13">
+					<div id="ov_box_14_2" class="ov_box_14">
+						<div id="ov_text_12_2" class="ov_text_12">
+							HERMANDAD SACRAMENTAL DE JESÚS EN SAMARIA Y SANTA ORACIÓN EN EL HUERTO Y SANTISIMA VIRGEN DE LA PAZ
+						</div>
+						<div id="ov_text_13_2" class="ov_text_13">
+							Día 20
+						</div>
+					</div>
+					<div id="ov_box_15_2" class="ov_box_15">
+						<div id="ov_text_15_2" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_2" class="ov_text_14">
+							11:45h<br>
+							Basílica de Santa María
+						</div>
+						<div id="ov_box_16_2" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats">&nbsp;</div>
+				</div>
+				<script>
+					$("#ov_box_13_2").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_sacramental_jesus_samaria_virgen_paz_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_3" class="ov_box_13">
+					<div id="ov_box_14_2" class="ov_box_14">
+						<div id="ov_text_12_2" class="ov_text_12">
+							HERMANDAD SACRAMENTAL SANTÍSIMO CRISTO DE LAS PENAS Y SANTA MUJER VERÓNICA
+						</div>
+						<div id="ov_text_13_2" class="ov_text_13">
+							Día 20
+						</div>
+					</div>
+					<div id="ov_box_15_2" class="ov_box_15">
+						<div id="ov_text_15_2" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_2" class="ov_text_14">
+							11:45h<br>
+							Basílica de Santa María
+						</div>
+						<div id="ov_box_16_2" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats">&nbsp;</div>
+				</div>
+				<script>
+					$("#ov_box_13_3").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santisimo_cristo_penas_santa_mujer_veronica_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_4" class="ov_box_13">
+					<div id="ov_box_14_2" class="ov_box_14">
+						<div id="ov_text_12_2" class="ov_text_12">
+							PENITENCIAL HERMANDAD DE JESÚS ATADO A LA COLUMNA EN SU SANTA FLAGELACIÓN
+						</div>
+						<div id="ov_text_13_2" class="ov_text_13">
+							Día 20
+						</div>
+					</div>
+					<div id="ov_box_15_2" class="ov_box_15">
+						<div id="ov_text_15_2" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_2" class="ov_text_14">
+							18:00h<br>
+							Parroquia de San Blas
+						</div>
+						<div id="ov_box_16_2" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats">&nbsp;</div>
+				</div>
+				<script>
+					$("#ov_box_13_4").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_jesus_atado_columna_santa_flagelacion_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+								
+				<div id="ov_box_13_5" class="ov_box_13">
+					<div id="ov_box_14_3" class="ov_box_14">
+						<div id="ov_text_12_3" class="ov_text_12">
+							COFRADIA SAN PEDRO APÓSTOL
+						</div>
+						<div id="ov_text_13_3" class="ov_text_13">
+							Día 20
+						</div>
+					</div>
+					<div id="ov_box_15_3" class="ov_box_15">
+						<div id="ov_text_15_3" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_3" class="ov_text_14">
+							18:45h<br>
+							S. I. Concatedral de San Nicolás de Bari
+						</div>
+						<div id="ov_box_16_3" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_5").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_san_pedro_apostol_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+												
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_6" class="ov_box_13">
+					<div id="ov_box_14_4" class="ov_box_14">
+						<div id="ov_text_12_4" class="ov_text_12">
+							COFRADÍA DEL SANTÍSIMO CRISTO DEL HALLAZGO Y LA VIRGEN DOLOROSA
+						</div>
+						<div id="ov_text_13_4" class="ov_text_13">
+							Día 20
+						</div>
+					</div>
+					<div id="ov_box_15_4" class="ov_box_15">
+						<div id="ov_text_15_4" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_4" class="ov_text_14">
+							19:00h<br>
+							Convento RR.HH. Capuchinas 
+						</div>
+						<div id="ov_box_16_4" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_6").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santisimo_cristo_hallazgo_virgen_dolorosa_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+												
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+			</div>
+
+			
+			<div id="ov_zone_13_21_mar" class="ov_zone_13">
+				
+				<div id="ov_box_13_7" class="ov_box_13">
+					<div id="ov_box_14_5" class="ov_box_14">
+						<div id="ov_text_12_5" class="ov_text_12">
+							HERMANDAD DEL PRENDIMIENTO Y NUESTRA SEÑORA DEL CONSUELO
+						</div>
+						<div id="ov_text_13_5" class="ov_text_13">
+							Día 21
+						</div>
+					</div>
+					<div id="ov_box_15_5" class="ov_box_15">
+						<div id="ov_text_15_5" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_5" class="ov_text_14">
+							17:45h<br>
+							M.A.R.Q. Plaza D. Gómez Ulla 
+						</div>
+						<div id="ov_box_16_5" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_7").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_prendimiento_nuestra_senora_consuelo_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+													
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+									
+				<div id="ov_box_13_8" class="ov_box_13">
+					<div id="ov_box_14_2_0" class="ov_box_14">
+						<div id="ov_text_12_2_0" class="ov_text_12">
+							COFRADÍA DEL CRISTO “EL MORENET” DE LOS HOMBRES DEL MAR
+						</div>
+						<div id="ov_text_13_2_0" class="ov_text_13">
+							Día 21
+						</div>
+					</div>
+					<div id="ov_box_15_2_0" class="ov_box_15">
+						<div id="ov_text_15_2_0" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_2_0" class="ov_text_14">
+							18:30h<br>
+							Ermita Virgen del Socorro 
+						</div>
+						<div id="ov_box_16_2_0" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats">&nbsp;</div>
+				</div>
+				<script>
+					$("#ov_box_13_8").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_cristo_morenet_patron_hombres_mar_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_9" class="ov_box_13">
+					<div id="ov_box_14_2_0" class="ov_box_14">
+						<div id="ov_text_12_2_0" class="ov_text_12">
+							HERMANDAD PENITENCIAL DEL SANTÍSIMO CRISTO DE LA HUMILDAD Y PACIENCIA Y NUESTRA SEÑORA DE LAS LÁGRIMAS
+						</div>
+						<div id="ov_text_13_2_0" class="ov_text_13">
+							Día 21
+						</div>
+					</div>
+					<div id="ov_box_15_2_0" class="ov_box_15">
+						<div id="ov_text_15_2_0" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_2_0" class="ov_text_14">
+							19.00h<br>
+							Parroquia de Nuestra Señora de Gracia
+						</div>
+						<div id="ov_box_16_2_0" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats">&nbsp;</div>
+				</div>
+				<script>
+					$("#ov_box_13_9").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santisimo_cristo_humildad_paciencia_nuestra_senora_lagrimas_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_10" class="ov_box_13">
+					<div id="ov_box_14_2_0" class="ov_box_14">
+						<div id="ov_text_12_2_0" class="ov_text_12">
+							HERMANDAD AGUSTINA DE NUESTRO PADRE JESÚS DESPOJADO DE SUS VESTIDURAS
+						</div>
+						<div id="ov_text_13_2_0" class="ov_text_13">
+							Día 21
+						</div>
+					</div>
+					<div id="ov_box_15_2_0" class="ov_box_15">
+						<div id="ov_text_15_2_0" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_2_0" class="ov_text_14">
+							19:00h<br>
+							Ermita de San Roque 
+						</div>
+						<div id="ov_box_16_2_0" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats">&nbsp;</div>
+				</div>
+				<script>
+					$("#ov_box_13_10").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nuestro_padre_jesus_despojado_vestiduras_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>				
+				
+			</div>
+			
+			<div id="ov_zone_13_22_mar" class="ov_zone_13">
+				
+				<div id="ov_box_13_11" class="ov_box_13">
+					<div id="ov_box_14_6" class="ov_box_14">
+						<div id="ov_text_12_6" class="ov_text_12">
+							MUY ILUSTRE, PENITENCIAL Y FRANCISCANA COFRADÍA DEL SANTÍSIMO ECCE HOMO Y NUESTRA SEÑORA DE LA AMARGURA
+						</div>
+						<div id="ov_text_13_6" class="ov_text_13">
+							Día 22
+						</div>
+					</div>
+					<div id="ov_box_15_6" class="ov_box_15">
+						<div id="ov_text_15_6" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_6" class="ov_text_14">
+							18:45h<br>
+							Parroquia San Antonio de Padua 
+						</div>
+						<div id="ov_box_16_6" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_11").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_eccehomo_nuestra_senora_amargura_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_12" class="ov_box_13">
+					<div id="ov_box_14_7" class="ov_box_14">
+						<div id="ov_text_12_7" class="ov_text_12">
+							HERMANDAD SACRAMENTAL DEL SANTÍSIMO CRISTO DEL MAR, NUESTRA SEÑORA DE LOS DOLORES Y SAN JUAN DE LA PALMA
+						</div>
+						<div id="ov_text_13_7" class="ov_text_13">
+							Día 22
+						</div>
+					</div>
+					<div id="ov_box_15_7" class="ov_box_15">
+						<div id="ov_text_15_7" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_7" class="ov_text_14">
+							19:30h<br>
+							Basílica de Santa María 
+						</div>
+						<div id="ov_box_16_7" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_12").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santisimo_cristo_mar_nuestra_senora_dolores_san_juan_palma_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_13" class="ov_box_13">
+					<div id="ov_box_14_8" class="ov_box_14">
+						<div id="ov_text_12_8" class="ov_text_12">
+							HERMANDAD PENITENCIAL STABAT MATER
+						</div>
+						<div id="ov_text_13_8" class="ov_text_13">
+							Día 22
+						</div>
+					</div>
+					<div id="ov_box_15_8" class="ov_box_15">
+						<div id="ov_text_15_8" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_8" class="ov_text_14">
+							20:15h<br>
+							Parroquia Nuestra Señora de Gracia
+						</div>
+						<div id="ov_box_16_8" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_13").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_stabat_mater_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_14" class="ov_box_13">
+					<div id="ov_box_14_8" class="ov_box_14">
+						<div id="ov_text_12_8" class="ov_text_12">
+							HERMANDAD DE NUESTRO PADRE JESÚS
+						</div>
+						<div id="ov_text_13_8" class="ov_text_13">
+							Día 22
+						</div>
+					</div>
+					<div id="ov_box_15_8" class="ov_box_15">
+						<div id="ov_text_15_8" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_8" class="ov_text_14">
+							21:00h<br>
+							S. I. Concatedral de San Nicolás 
+						</div>
+						<div id="ov_box_16_8" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_14").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nuestro_padre_jesus_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+			</div>
+			
+			<div id="ov_zone_13_23_mar" class="ov_zone_13">
+			
+				<div id="ov_box_13_15" class="ov_box_13">
+					<div id="ov_box_14_9" class="ov_box_14">
+						<div id="ov_text_12_9" class="ov_text_12">
+							HERMANDAD DE LA SANTA CRUZ
+						</div>
+						<div id="ov_text_13_9" class="ov_text_13">
+							Día 23
+						</div>
+					</div>
+					<div id="ov_box_15_9" class="ov_box_15">
+						<div id="ov_text_15_9" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_9" class="ov_text_14">
+							19:00h<br>
+							Ermita de Santa Cruz 
+						</div>
+						<div id="ov_box_16_9" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_15").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santa_cruz_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_16" class="ov_box_13">
+					<div id="ov_box_14_10" class="ov_box_14">
+						<div id="ov_text_12_10" class="ov_text_12">
+							COFRADÍA SACRAMENTAL CRISTO DEL DIVINO AMOR Y VIRGEN DE LA SOLEDAD “LA MARINERA”
+						</div>
+						<div id="ov_text_13_10" class="ov_text_13">
+							Día 23
+						</div>
+					</div>
+					<div id="ov_box_15_10" class="ov_box_15">
+						<div id="ov_text_15_10" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_10" class="ov_text_14">
+							21:00h<br>
+							Convento RR. MM. Canonesas de San Agustín 
+						</div>
+						<div id="ov_box_16_10" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_16").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_cristo_divino_amor_virgen_soledad_marinera_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_17" class="ov_box_13">
+					<div id="ov_box_14_10" class="ov_box_14">
+						<div id="ov_text_12_10" class="ov_text_12">
+							MUY ILUSTRE, SANTA Y SACRAMENTAL HERMANDAD DE LA MISERICORDIA, NUESTRO PADRE JESÚS DEL GRAN PODER Y NUESTRA SEÑORA DE LA ESPERANZA CORONADA
+						</div>
+						<div id="ov_text_13_10" class="ov_text_13">
+							Día 23
+						</div>
+					</div>
+					<div id="ov_box_15_10" class="ov_box_15">
+						<div id="ov_text_15_10" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_10" class="ov_text_14">
+							21:15h<br>
+							Parroquia de Ntra. Sra. de la Misericordia
+						</div>
+						<div id="ov_box_16_10" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_17").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nuestro_padre_jesus_gran_poder_nuestra_senora_esperanza_coronada_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+			
+			</div>
+			
+			<div id="ov_zone_13_24_mar" class="ov_zone_13">
+				
+				<div id="ov_box_13_18" class="ov_box_13">
+					<div id="ov_box_14_11" class="ov_box_14">
+						<div id="ov_text_12_11" class="ov_text_12">
+							PONTIFICIA, REAL, ILUSTRE, VENERABLE Y SALESIANA HERMANDAD SACRAMENTAL DE LA SANTA CENA
+						</div>
+						<div id="ov_text_13_11" class="ov_text_13">
+							Día 24
+						</div>
+					</div>
+					<div id="ov_box_15_11" class="ov_box_15">
+						<div id="ov_text_15_11" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_11" class="ov_text_14">
+							19:30h<br>
+							Casa de la Familia Salesiana 
+						</div>
+						<div id="ov_box_16_11" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_18").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santa_cena_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_19" class="ov_box_13">
+					<div id="ov_box_14_111" class="ov_box_14">
+						<div id="ov_text_12_111" class="ov_text_12">
+							MUY PIADOSA HERMANDAD Y COFRADÍA DE NAZARENOS DE LA SANTA REDENCIÓN
+						</div>
+						<div id="ov_text_13_111" class="ov_text_13">
+							Día 24
+						</div>
+					</div>
+					<div id="ov_box_15_111" class="ov_box_15">
+						<div id="ov_text_15_111" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_111" class="ov_text_14">
+							19:30h<br>
+							Parroquia San Antonio de Padua 
+						</div>
+						<div id="ov_box_16_111" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_19").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nazarenos_santa_redencion_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_20" class="ov_box_13">
+					<div id="ov_box_14_12" class="ov_box_14">
+						<div id="ov_text_12_12" class="ov_text_12">
+							COFRADÍA DE NUESTRA SEÑORA DE LA PIEDAD Y DE LA CARIDAD Y CRISTO DE LA PAZ
+						</div>
+						<div id="ov_text_13_12" class="ov_text_13">
+							Día 24
+						</div>
+					</div>
+					<div id="ov_box_15_12" class="ov_box_15">
+						<div id="ov_text_15_12" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_12" class="ov_text_14">
+							20:30h<br>
+							Parroquia San Juan Bautista 
+						</div>
+						<div id="ov_box_16_12" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_20").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nuestra_senora_piedad_caridad_cristo_paz_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_21" class="ov_box_13">
+					<div id="ov_box_14_13" class="ov_box_14">
+						<div id="ov_text_12_13" class="ov_text_12">
+							HERMANDAD PENITENCIAL DEL PERDÓN
+						</div>
+						<div id="ov_text_13_13" class="ov_text_13">
+							Día 24
+						</div>
+					</div>
+					<div id="ov_box_15_13" class="ov_box_15">
+						<div id="ov_text_15_13" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_13" class="ov_text_14">
+							22:45h<br>
+							S.I.Concatedral de San Nicolás 
+						</div>
+						<div id="ov_box_16_13" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_21").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_perdon_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_22" class="ov_box_13">
+					<div id="ov_box_14_14" class="ov_box_14">
+						<div id="ov_text_12_14" class="ov_text_12">
+							HERMANDAD DEL SANTÍSIMO CRISTO DE LA BUENA MUERTE Y NUESTRA SEÑORA DE LAS ANGUSTIAS (Procesión Del Silencio)
+						</div>
+						<div id="ov_text_13_14" class="ov_text_13">
+							Día 24
+						</div>
+					</div>
+					<div id="ov_box_15_13" class="ov_box_15">
+						<div id="ov_text_15_13" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_13" class="ov_text_14">
+							23:30h<br>
+							S.I. Concatedral de San Nicolás 
+						</div>
+						<div id="ov_box_16_13" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_22").click(function(e){
+											
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santisimo_cristo_buena_muerte_nuestra_senora_angustias_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+			</div>
+			
+			<div id="ov_zone_13_25_mar" class="ov_zone_13">
+
+				<div id="ov_box_13_23" class="ov_box_13">
+					<div id="ov_box_14_15" class="ov_box_14">
+						<div id="ov_text_12_15" class="ov_text_12">
+							COFRADÍA DE LA SENTENCIA DE JESÚS
+						</div>
+						<div id="ov_text_13_15" class="ov_text_13">
+							Día 25
+						</div>
+					</div>
+					<div id="ov_box_15_15" class="ov_box_15">
+						<div id="ov_text_15_15" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_15" class="ov_text_14">
+							10:30h<br>
+							Parroquia El Buen Pastor (C/ Doctor Ayela) 
+						</div>
+						<div id="ov_box_16_15" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_23").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_sentencia_jesus_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>
+				
+				<div id="ov_box_13_24" class="ov_box_13">
+					<div id="ov_box_14_16" class="ov_box_14">
+						<div id="ov_text_12_16" class="ov_text_12">
+							HERMANDAD PENITENCIAL MATER DE SOLATA
+						</div>
+						<div id="ov_text_13_16" class="ov_text_13">
+							Día 25
+						</div>
+					</div>
+					<div id="ov_box_15_16" class="ov_box_15">
+						<div id="ov_text_15_16" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_16" class="ov_text_14">
+							18:30h<br>
+							Parroquia San José Carolinas 
+						</div>
+						<div id="ov_box_16_16" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_24").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_mater_desolata_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>	
+
+				<div id="ov_box_13_25" class="ov_box_13">
+					<div id="ov_box_14_17" class="ov_box_14">
+						<div id="ov_text_12_17" class="ov_text_12">
+							REAL COFRADÍA DE NUESTRA SEÑORA DE LA SOLEDAD DE SANTA MARÍA
+						</div>
+						<div id="ov_text_13_17" class="ov_text_13">
+							Día 25
+						</div>
+					</div>
+					<div id="ov_box_15_17" class="ov_box_15">
+						<div id="ov_text_15_17" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_17" class="ov_text_14">
+							20:00h<br>
+							Basílica de Santa María 
+						</div>
+						<div id="ov_box_16_17" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_25").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nuestra_senora_soledad_santa_maria_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+											
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>		
+
+				<div id="ov_box_13_26" class="ov_box_13">
+					<div id="ov_box_14_18" class="ov_box_14">
+						<div id="ov_text_12_18" class="ov_text_12">
+							HERMANDAD DEL SANTO SEPULCRO
+						</div>
+						<div id="ov_text_13_18" class="ov_text_13">
+							Día 25
+						</div>
+					</div>
+					<div id="ov_box_15_18" class="ov_box_15">
+						<div id="ov_text_15_18" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_18" class="ov_text_14">
+							20:30h<br>
+							S.I. Concatedral de San Nicolás 
+						</div>
+						<div id="ov_box_16_18" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_26").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santo_sepulcro_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+											
+					});
+				</script>
+				
+				<div class="hollow_10px"> </div>		
+			
+			</div>
+			
+			<div id="ov_zone_13_27_mar" class="ov_zone_13">
+			
+				<div id="ov_box_13_27" class="ov_box_13">
+					<div id="ov_box_14_27" class="ov_box_14">
+						<div id="ov_text_12_27" class="ov_text_12">
+							GLORIOSA HERMANDAD EL CRISTO RESUCITADO
+						</div>
+						<div id="ov_text_13_27" class="ov_text_13">
+							Día 27
+						</div>
+					</div>
+					<div id="ov_box_15_27" class="ov_box_15">
+						<div id="ov_text_15_27" class="ov_text_15">
+							Salida:
+						</div>
+						<div id="ov_text_14_27" class="ov_text_14">
+							11:00h<br>
+							S.I. Concatedral de San Nicolás
+						</div>
+						<div id="ov_box_16_27" class="ov_box_16">
+							+ información
+						</div>	
+					</div>
+					<div class="ov_clear_floats"> </div>
+				</div>
+				<script>
+					$("#ov_box_13_27").click(function(e){
+						
+						load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_cristo_resucitado_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+											
+					});
+				</script>			
+
+				<div class="hollow_10px"> </div>				
+					
+				
+			</div>
+	
+			<div class="hollow_10px"> </div>
+			<div class="hollow_10px"> </div>
+			
+		</div>
+		
+	</div>
+		
+</div>
+<script>
+	calculate_day();	
+</script>

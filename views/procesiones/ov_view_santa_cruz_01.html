@@ -1,0 +1,484 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Miércoles Santo (Hermandad de la Santa Cruz)
+			</div>
+			<div class="subtitulos_procesion">
+				23 de Marzo - Miércoles Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>19:00h</b> desde la Ermita de Santa Cruz.
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			Asistir a la bajada de los tronos por las empinadas calles del Barrio de Santa Cruz. Si interesante es la bajada, lo es todavía más contemplar la subida por las mismas calles. En ambos casos se requiere antelación para encontrar el lugar idóneo de observación. Es de destacar la tradición de costaleros que existe en este barrio.
+			<br>
+			Debido a la estrechez de la puerta de la ermita de Santa Cruz, el paso del Descendimiento es sacado por sus costaleros a ras de suelo y sin la parte superior de la cruz, que posteriormente se colocará nuevamente.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Hermandad de la Santa Cruz
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/hermandad_santa_cruz.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta, zapato y capirote negro, cingulo rojo. </br>
+			Costaleros: Vesta y zapatos negros, cíngulo rojo y toalla blanca. </br>
+			Damas de mantilla: Traje, mantilla, guantes y zapatos negros.
+			<img src="./resources/habitos/santa_cruz.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Cristo Cautivo
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Cristo de la Fe
+		</div>
+		
+		<div class="informacion_pasos">
+			Popularmente conocido como "El Gitano".	
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			El Descendimiento de la Cruz
+		</div>
+		
+		<div class="informacion_pasos">
+			Autor: Castillo Lastrucci
+			<br><br>
+			Por encargo de Don José María Paternina Iturriagagoita, gobernador de Alicante de 1944 a 1948.		
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Nuestra Señora de los Dolores
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida y llegada en la Ermita de Santa Cruz.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_santa_cruz" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_santa_cruz").gmap3({
+					map:{
+						options:{
+						center:[38.346083, -0.483417],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.347590, -0.483089], data:"Ermita de Santa Cruz"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.347590, -0.483089], // salida
+							[38.347750, -0.482839], // san antonio
+							[38.347914, -0.482430],
+							[38.347981, -0.482226], // diputado auset
+							[38.348039, -0.482072],
+							[38.348029, -0.481990], // san rafael
+							[38.347716, -0.482298],
+							[38.347639, -0.482361],
+							[38.347517, -0.482420],
+							[38.347187, -0.482504], // plaza carmen
+							[38.347196, -0.482657],
+							[38.346831, -0.482652],
+							[38.346857, -0.482876],
+							[38.346838, -0.482937], // cienfuegos
+							[38.346714, -0.482983],
+							[38.346312, -0.483135], // virgen belen
+							[38.346310, -0.483168], // santos medicos
+							[38.346682, -0.483507],
+							[38.346630, -0.483619], 
+							[38.346705, -0.483663], // san cristobal
+							[38.346867, -0.483797],
+							[38.347137, -0.483973],
+							[38.347353, -0.484215], // general primo de rivera
+							[38.347620, -0.484537],
+							[38.347763, -0.484754], // rambla
+							[38.346440, -0.484385],
+							[38.345966, -0.484141],
+							[38.344594, -0.483348],
+							[38.344898, -0.482513], // mayor
+							[38.345238, -0.482757], // muñoz
+							[38.345395, -0.482872], // abad penalva / concatedral
+							[38.345847, -0.483125], // labradores
+							[38.346649, -0.483615], // san cristobal
+							[38.346695, -0.483485], // argensola
+							[38.346866, -0.483194],
+							[38.346988, -0.482928],
+							[38.347045, -0.482776],
+							[38.347064, -0.482642], // plaza carmen
+							[38.347188, -0.482656],
+							[38.347192, -0.482512],
+							[38.347636, -0.482356], // san rafael
+							[38.347720, -0.482302],
+							[38.348042, -0.482004],
+							[38.348042, -0.482108], // diputado auset
+							[38.347982, -0.482239],
+							[38.347850, -0.482566], // san antonio
+							[38.347788, -0.482724]
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Ermita de Santa Cruz
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle Diputado Auset, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle Diputado Auset
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Diputado Auset, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle San Antonio
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle San Antonio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle San Rafael
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle San Rafael, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Plaza del Carmen
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Plaza del Carmen, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Calle Cienfuegos
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Cienfuegos, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Calle Virgen de Belén
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Calle Virgen de Belén, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle Santos Médicos
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle Santos Médicos, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Plaza San Cristobal
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Plaza San Cristobal, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Calle Mestre Martínez
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Calle Mestre Martínez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Calle General Primo de Rivera
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Calle General Primo de Rivera, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Carrera Oficial
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			Plaza del Abad Penalva
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_19" class="punto_a_ruta">
+			S.I. Concatedral de San Nicolás de Bari
+		</div>
+		<script>
+			$("#ov_place_19").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_20" class="punto_a_ruta">
+			Calle Labradores
+		</div>
+		<script>
+			$("#ov_place_20").click(function(e){
+				show_geoloc("Calle Labradores, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_21" class="punto_a_ruta">
+			Plaza San Cristobal
+		</div>
+		<script>
+			$("#ov_place_21").click(function(e){
+				show_geoloc("Plaza San Cristobal, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_22" class="punto_a_ruta">
+			Calle Argensola
+		</div>
+		<script>
+			$("#ov_place_22").click(function(e){
+				show_geoloc("Calle Argensola, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_23" class="punto_a_ruta">
+			Calle Cienfuegos
+		</div>
+		<script>
+			$("#ov_place_23").click(function(e){
+				show_geoloc("Calle Cienfuegos, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_24" class="punto_a_ruta">
+			Plaza del Carmen
+		</div>
+		<script>
+			$("#ov_place_24").click(function(e){
+				show_geoloc("Plaza del Carmen, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_25" class="punto_a_ruta">
+			Calle San Rafael
+		</div>
+		<script>
+			$("#ov_place_25").click(function(e){
+				show_geoloc("Calle San Rafael, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_26" class="punto_a_ruta">
+			Calle San Antonio
+		</div>
+		<script>
+			$("#ov_place_26").click(function(e){
+				show_geoloc("Calle San Antonio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_27" class="punto_a_ruta">
+			Calle Diputado Auset
+		</div>
+		<script>
+			$("#ov_place_27").click(function(e){
+				show_geoloc("Calle Diputado Auset, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_28" class="punto_a_ruta">
+			Ermita de Santa Cruz
+		</div>
+		<script>
+			$("#ov_place_28").click(function(e){
+				show_geoloc("Calle Diputado Auset, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

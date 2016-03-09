@@ -1,0 +1,386 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Miércoles Santo (Cofradía Sacramental del Cristo del Divino Amor y Virgen de la Soledad "La Marinera")
+			</div>
+			<div class="subtitulos_procesion">
+				23 de Marzo - Miércoles Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>21:00h</b> desde Convento RR. MM. de San Agustín.
+			</div>
+			
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Cofradía Sacramental del Cristo del Divino Amor y Virgen de la Soledad "La Marinera"
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/cofradia_sacramental_cristo_divino_amor_virgen_soledad_marinera.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta y capirote rojos. Capa con escudo, calcetines, cíngulo y guantes blancos. Zapatos rojos, con hebilla de plata. Portan la medalla de la cofradia. </br>
+			Costaleros Cristo: Traje oscuro, camisa y guantes blancos, corbata, calcetines y zapatos negros, medalla de la cofradia. </br>
+			Costaleros Virgen: Vestimenta de tuno, guantes blancos, medalla de la cofradia.
+			<img src="./resources/habitos/cristo_divino_amor_virgen_soledad_marinera.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Santas mujeres al pie de la Cruz
+		</div>
+		
+		<div class="informacion_pasos">
+			En el año 2000 estrenaron el soporte de la Cruz de Guía, repujada a mano, criales de plata, mazas y bocinas, todo ello trabajado a mano.		
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Nuestra Señora de la Soledad "La Marinera"
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida y llegada en el Convento RR. MM. de San Agustín.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_divino_amor_marinera" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_divino_amor_marinera").gmap3({
+					map:{
+						options:{
+						center:[38.345450, -0.482483],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.346048, -0.481410], data:"Convento RR. MM. de San Agustín"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.346048, -0.481410], // salida
+							[38.345998, -0.481404], // monjas
+							[38.345963, -0.481660], // san agustin
+							[38.346073, -0.481676],
+							[38.346072, -0.481963], // montengon
+							[38.346029, -0.482352], // san nicolas
+							[38.346293, -0.482400],
+							[38.346321, -0.482863], // virgen belen
+							[38.346316, -0.483165], // santos medicos
+							[38.346689, -0.483511],
+							[38.346645, -0.483621], // plaza san cristobal
+							[38.346775, -0.483721],
+							[38.346868, -0.483802],
+							[38.347139, -0.483978], // primo de rivera
+							[38.347560, -0.484452],
+							[38.347650, -0.484568],
+							[38.347768, -0.484750], // rambla
+							[38.347656, -0.484723],
+							[38.347555, -0.485289], // pintor sorolla
+							[38.347091, -0.484926], // torregrosa
+							[38.346750, -0.484700], 
+							[38.346784, -0.484579],
+							[38.346840, -0.484502], // rambla
+							[38.346419, -0.484378],
+							[38.345966, -0.484139],
+							[38.345261, -0.483744],
+							[38.344566, -0.483341], // mayor
+							[38.344894, -0.482514],
+							[38.345367, -0.481448],
+							[38.345638, -0.481589], // santisima faz / san agustin
+							[38.345965, -0.481667], // san agustin
+							[38.345993, -0.481405], // monjas
+							[38.346055, -0.481418] // convento
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Convento RR. MM. de San Agustín
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle Monjas, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle Monjas
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Monjas, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle San Agustín
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle San Agustín, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle Montengón
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Montengón, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Calle San Nicolás
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle San Nicolás, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Calle Virgen de Belén
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Virgen de Belén, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Calle Santos Médicos
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Calle Santos Médicos, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Plaza San Cristobal
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Plaza San Cristobal, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Calle Mestre Martínez
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Calle Mestre Martínez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Calle General Primo de Rivera
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Calle General Primo de Rivera, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Calle Pintor Sorolla
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Pintor Sorolla, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Calle Tomás López Torregrosa
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Calle Tomás López Torregrosa, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			Plaza Santísima Faz
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Plaza Santísima Faz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_19" class="punto_a_ruta">
+			Calle San Agustín
+		</div>
+		<script>
+			$("#ov_place_19").click(function(e){
+				show_geoloc("Calle San Agustín, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_30" class="punto_a_ruta">
+			Calle Monjas
+		</div>
+		<script>
+			$("#ov_place_20").click(function(e){
+				show_geoloc("Calle Monjas, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_21" class="punto_a_ruta">
+			Convento RR. MM. de San Agustín
+		</div>
+		<script>
+			$("#ov_place_21").click(function(e){
+				show_geoloc("Calle Monjas, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

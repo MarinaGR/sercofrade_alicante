@@ -1,0 +1,106 @@
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
+		
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<!--<img src="./resources/escudos/santo_sepulcro.png" class="ov_image_circle" alt=" ">-->
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Hermandad del Santo Sepulcro</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="texto_hermandad">
+			<b>Socios:</b> 400. <b>Vestas:</b> 160. <b>MANTILLAS:</b> 25. <b>COSTALEROS:</b> 6.
+			<br><br>
+			La Procesión del Entierro se mantuvo en Alicante hasta 1930. Su último presidente fue D. Bernardo Pérez López “El Abuelo”. El 7 de marzo de 1932, el Gobernador Civil D. Francisco Valdés Cases telegrafió a todos los Alcaldes de la Provincia prohibiendo las Procesiones de Semana Santa. Fue reorganizada después de la Guerra Civil, el 10 de diciembre de 1942, por miembros de la Hermandad de Nuestro Padre Jesús.
+		</div>
+		
+		<div class="titulos_hermandad">
+			DATOS
+		</div>
+		
+		<div class="informacion_hermandad">
+			<b>Túnica:</b><br>
+			<img src="./resources/habitos/santo_sepulcro.jpg" style="display:block">
+			<br><br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			PROCESIONES
+		</div>
+		
+		<div id="ov_to_proce" class="enlace_a_procesion">
+			Viernes Santo (Hermandad del Santo Sepulcro)
+		</div>
+		<script>
+			$("#ov_to_proce").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_santo_sepulcro_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div class="subtitulo_hermandad">
+			Cristo Yacente
+		</div>
+		
+		<div class="informacion_pasos">
+			El trono es presidido por miembros de la Orden de Caballeros del Santo Sepulcro de Jerusalén y por la Agrupación de Caballeros de Honor-escolta Santo Sepulcro.					
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

@@ -1,0 +1,486 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Miércoles Santo (Muy Ilustre, Santa y Sacramental Hermandad de la Misericordia, Nuestro Padre Jesús del Gran Poder y Nuestra Señora de la Esperanza Coronada)
+			</div>
+			<div class="subtitulos_procesion">
+				23 de Marzo - Miércoles Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>21:15h</b> desde la Parroquia de Nuestra Señora de la Misericordia.
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			Ver salir y recogerse los pasos por la puerta de la Misericordia, es espectacular y emocionante. La entrada en Carrera Oficial es sobria en el Paso del Cristo, contrastando con el Paso de la Virgen que es mecido al compás de las marchas que son interpretadas.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Muy Ilustre, Santa y Sacramental Hermandad de la Misericordia, Nuestro Padre Jesús del Gran Poder y Nuestra Señora de la Esperanza Coronada
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/ilustre_santa_sacramental_hermandad_misericordia_nuestro_padre_jesus_gran_poder_nuestra_senora_esperanza_coronada.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta blanca, con botones negros. Antifaz cubriendo capirote y capa de raso negro. Cíngulo dorado. Guantes blancos y calzado negro. </br>
+			Costaleros: Costal. Chaqueta negra con escudo de la hermandad. Faja negra. Pantalón y calzado negro (Cristo), pantalón blanco (palio).
+			<img src="./resources/habitos/nuestro_padre_jesus_gran_poder_nuestra_senora_esperanza_coronada.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Nuestro Padre Jesús del Gran Poder
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Nuestra Señora de la Esperanza Coronada.
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida y llegada en la Parroquia de Nuestra Señora de la Misericordia.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_misericordia_poder_esperanza" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_misericordia_poder_esperanza").gmap3({
+					map:{
+						options:{
+						center:[38.348483, -0.482744],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.351720, -0.483685], data:"Parroquia de Nuestra Señora de la Misericordia"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.351720, -0.483685], // salida
+							[38.351739, -0.483793], // hospital viejo
+							[38.352117, -0.483696],
+							[38.352280, -0.483484],
+							[38.352252, -0.483089], // cuesta fabrica
+							[38.351710, -0.483322], // plaza misericordia
+							[38.351668, -0.483135], // trafalgar
+							[38.351294, -0.483192],
+							[38.350788, -0.483324],
+							[38.350089, -0.483508],
+							[38.349582, -0.483604],
+							[38.349117, -0.483731], // gallo
+							[38.349126, -0.484047], // pozo
+							[38.348732, -0.484148],
+							[38.348615, -0.484865], // concepcion / san vicente
+							[38.348570, -0.485966], // inglada
+							[38.347942, -0.485625], // calderon
+							[38.347833, -0.485537], // alfonso sabio
+							[38.347085, -0.484925], // torregrosa
+							[38.346765, -0.484695],
+							[38.346787, -0.484593],
+							[38.346845, -0.484514],
+							[38.346427, -0.484373], // rambla
+							[38.345964, -0.484137],
+							[38.345154, -0.483707],
+							[38.344578, -0.483346],
+							[38.344680, -0.483079], // mayor
+							[38.344809, -0.482750],
+							[38.344899, -0.482520],
+							[38.345240, -0.482756], // muñoz
+							[38.345392, -0.482866], // concatedral / abad penalva
+							[38.345850, -0.483122], // labradores
+							[38.346643, -0.483600], // san cristobal
+							[38.346869, -0.483805],
+							[38.347137, -0.483973],
+							[38.347507, -0.484388], // primo rivera
+							[38.347615, -0.484524],
+							[38.347764, -0.484748],
+							[38.348093, -0.484862],
+							[38.348228, -0.484890], // san vicente
+							[38.348617, -0.484883],
+							[38.348686, -0.484464], // concepcion
+							[38.349598, -0.484303], // diaz moreu
+							[38.349880, -0.484254],
+							[38.350125, -0.484213],
+							[38.350439, -0.484160],
+							[38.350595, -0.484135],
+							[38.350836, -0.484060],
+							[38.351181, -0.483954], // plaza santa teresa
+							[38.351732, -0.483795], // hospital viejo
+							[38.351724, -0.483669] // parroquia
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Plaza Hospital Viejo
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza Hospital Viejo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle Cuesta de la Fábrica
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Cuesta de la Fábrica, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Plaza de la Misericordia
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Plaza de la Misericordia, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle Trafalgar
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Trafalgar, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Calle Gallo
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Gallo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Calle Pozo
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Pozo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Calle Concepción
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Calle Concepción, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle San Vicente
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle San Vicente, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Calle Vicente Inglada
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Calle Vicente Inglada, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Calle Calderón de la Barca
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Calle Calderón de la Barca, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Avenida Alfonso X El Sabio
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Avenida Alfonso El Sabio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Calle Tomás López Torregrosa
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Tomás López Torregrosa, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Carrera Oficial
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			Calle Miguel Soler (Puerta Negra)
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Calle Miguel Soler, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_19" class="punto_a_ruta">
+			S.I. Concatedral de San Nicolás
+		</div>
+		<script>
+			$("#ov_place_19").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_20" class="punto_a_ruta">
+			Plaza del Abad Penalva
+		</div>
+		<script>
+			$("#ov_place_20").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_21" class="punto_a_ruta">
+			Calle Labradores
+		</div>
+		<script>
+			$("#ov_place_21").click(function(e){
+				show_geoloc("Calle Labradores, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_22" class="punto_a_ruta">
+			Calle San Cristobal
+		</div>
+		<script>
+			$("#ov_place_22").click(function(e){
+				show_geoloc("Carrer San Cristòfol, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_23" class="punto_a_ruta">
+			Calle General Primo de Rivera
+		</div>
+		<script>
+			$("#ov_place_23").click(function(e){
+				show_geoloc("Calle General Primo de Rivera, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_24" class="punto_a_ruta">
+			Avenida Alfonso X El Sabio
+		</div>
+		<script>
+			$("#ov_place_24").click(function(e){
+				show_geoloc("Avenida Alfonso El Sabio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_25" class="punto_a_ruta">
+			Calle San Vicente
+		</div>
+		<script>
+			$("#ov_place_25").click(function(e){
+				show_geoloc("Calle San Vicente, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_26" class="punto_a_ruta">
+			Calle Concepción
+		</div>
+		<script>
+			$("#ov_place_26").click(function(e){
+				show_geoloc("Calle Concepción, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_27" class="punto_a_ruta">
+			Calle Díaz Moreu
+		</div>
+		<script>
+			$("#ov_place_27").click(function(e){
+				show_geoloc("Calle Díaz Moreu, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_28" class="punto_a_ruta">
+			Plaza Santa Teresa
+		</div>
+		<script>
+			$("#ov_place_28").click(function(e){
+				show_geoloc("Plaza Santa Teresa, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_29" class="punto_a_ruta">
+			Plaza del Hospital Viejo
+		</div>
+		<script>
+			$("#ov_place_29").click(function(e){
+				show_geoloc("Plaza del Hospital Viejo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_30" class="punto_a_ruta">
+			Parroquia de la Misericordia
+		</div>
+		<script>
+			$("#ov_place_30").click(function(e){
+				show_geoloc("Plaza del Hospital Viejo, Alicante");
+			});
+		</script>
+		
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

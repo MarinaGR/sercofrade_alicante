@@ -1,0 +1,409 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Lunes Santo (Hermandad Penitencial del Santísimo Cristo de la Humildad y Paciencia y Nuestra Señora de las Lágrimas)
+			</div>
+			<div class="subtitulos_procesion">
+				21 de Marzo - Lunes Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>19:00h</b> desde la Parroquia de Nuestra Señora de Gracia.
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			Tras el anuncio oficial del inicio de la Estación de Penitencia, se procede al protocolario acto de apertura de las puertas de la iglesia de Ntra. Sra. de Gracia por parte del “clamator”, dando unos golpes con una maza en las puertas.
+			<br>
+			Entrada y salida de los pasos de la iglesia y recorrido por las calles San Francisco y Barón de Finestrat.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Hermandad Penitencial del Santísimo Cristo de la Humildad y Paciencia y Nuestra Señora de las Lágrimas
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/hermandad_penitencial_santisimo_cristo_humildad_paciencia_nuestra_senora_lagrimas.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Hábito monacal marrón, con capillo o capirote marfil, cíngulo con tres nudos, guantes blancos y zapatos negros. Medalla Hermandad. </br>
+			Costaleros: Visten equipación negra y camiseta blanca.
+			<img src="./resources/habitos/santisimo_cristo_humildad_paciencia_nuestra_senora_lagrimas.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Santísimo Cristo de la Humildad y Paciencia
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Virgen de las Lágrimas
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida y llegada en la Parroquia de Nuestra Señora de Gracia.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_humildad_paciencia_lagrimas" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_humildad_paciencia_lagrimas").gmap3({
+					map:{
+						options:{
+						center:[38.344653, -0.484898],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.344494, -0.487859], data:"Parroquia Nuestra Señora de Gracia"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.344494, -0.487859], // salida
+							[38.345184, -0.488122], // angel lozano
+							[38.345428, -0.487377], // teatro
+							[38.345962, -0.485762],
+							[38.346223, -0.484973], // duque zaragoza
+							[38.346391, -0.484377],
+							[38.345971, -0.484138], // rambla
+							[38.345260, -0.483752],
+							[38.344570, -0.483341],
+							[38.344897, -0.482510], // mayor
+							[38.345232, -0.482753], // muñoz 
+							[38.345338, -0.482439], // soler
+							[38.345446, -0.482507], // concatedral
+							[38.345361, -0.482855], // abad penalva
+							[38.345239, -0.482756],
+							[38.344907, -0.482520], // muñoz
+							[38.344584, -0.483307], // mayor
+							[38.344340, -0.483860], // portal elche
+							[38.344257, -0.483779], // bailen
+							[38.344083, -0.484252],
+							[38.343985, -0.484834], // san francisco
+							[38.344313, -0.484964], // castaños
+							[38.344300, -0.484955], // baron
+							[38.344046, -0.485817],
+							[38.343795, -0.487092], // jerusalen
+							[38.344607, -0.487257], // colon
+							[38.344539, -0.487871] // montañeta	
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Parroquia Nuestra Señora de Gracia
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza de la Montañeta, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Plaza de la Montañeta
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Plaza de la Montañeta, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle Ángel Lozano
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle Ángel Lozano, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle del Teatro
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle del Teatro, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Calle Duque de Zaragoza
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Duque de Zaragoza, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Rambla Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Rambla Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Calle Miguel Soler
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Calle Miguel Soler, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			S.I. Concatedral San Nicolás de Bari (Puerta negra)
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Plaza del Abad Penalva
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Plaza Portal de Elche (Zona peatonal)
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Plaza Portal de Elche (Zona peatonal), Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Calle Bailén
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Calle Bailén, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			Calle San Francisco
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Calle San Francisco, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_19" class="punto_a_ruta">
+			Calle Castaños
+		</div>
+		<script>
+			$("#ov_place_19").click(function(e){
+				show_geoloc("Calle Castaños, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_20" class="punto_a_ruta">
+			Calle Barón de Finestrat
+		</div>
+		<script>
+			$("#ov_place_20").click(function(e){
+				show_geoloc("Calle Barón de Finestrat, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_21" class="punto_a_ruta">
+			Calle Jerusalén
+		</div>
+		<script>
+			$("#ov_place_21").click(function(e){
+				show_geoloc("Calle Jerusalén, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_22" class="punto_a_ruta">
+			Calle Colón
+		</div>
+		<script>
+			$("#ov_place_22").click(function(e){
+				show_geoloc("Calle Colón, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_23" class="punto_a_ruta">
+			Plaza de la Montañeta
+		</div>
+		<script>
+			$("#ov_place_23").click(function(e){
+				show_geoloc("Plaza de la Montañeta, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_24" class="punto_a_ruta">
+			Parroquia Nuestra Señora de Gracia
+		</div>
+		<script>
+			$("#ov_place_24").click(function(e){
+				show_geoloc("Plaza de la Montañeta, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

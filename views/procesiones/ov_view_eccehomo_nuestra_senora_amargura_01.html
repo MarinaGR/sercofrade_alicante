@@ -1,0 +1,375 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Martes Santo (Muy Ilústre, Penitencial y Franciscana Cofradía del Santísimo Ecce-Homo y Nuestra Señora de la Amargura)
+			</div>
+			<div class="subtitulos_procesion">
+				22 de Marzo - Martes Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>18:45h</b> desde la Parroquia de San Antonio de Padua (Franciscanos).
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			La cofradía celebra un acto en recuerdo a los cofrades fallecidos a la salida de la procesión.
+			<br>
+			Especialmente interesante son la salida y entrada de los pasos en el Templo, por las reducidas dimensiones de la puerta.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Muy Ilústre, Penitencial y Franciscana Cofradía del Santísimo Ecce-Homo y Nuestra Señora de la Amargura
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/ilustre_penitencial_franciscana_cofradia_eccehomo_nuestra_senora_amargura.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta negra. Capa y capirote granate, zapatillas negras y cíngulo granate. Medalla de la hermandad. </br>
+			Costaleros: Pantalón, camiseta y zapatillas negros. Sudadera granate, con el escudo de la cofradía bordado. Llevan costal, faja y medalla de la cofradía. 
+			<img src="./resources/habitos/eccehomo_nuestra_senora_amargura.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Santísimo Ecce Homo
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Nuestra Señora de la Amargura
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida y llegada en la Parroquia de San Antonio de Padua (Franciscanos).<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_eccehomo_amargura" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_eccehomo_amargura").gmap3({
+					map:{
+						options:{
+						center:[38.348162, -0.485540],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.350875, -0.487759], data:"Parroquia San Antonio de Padua (Franciscanos)"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.350875, -0.487759], // salida	
+							[38.350964, -0.487896],
+							[38.350490, -0.488235], // poeta carmelo
+							[38.350452, -0.488048], // garcia morato
+							[38.348495, -0.487259],
+							[38.348495, -0.486644], // poeta quintanta
+							[38.347626, -0.486432], // capitan segarra
+							[38.347516, -0.486400],
+							[38.347629, -0.486127],
+							[38.347535, -0.486397], // alfonso x
+							[38.347628, -0.486140],
+							[38.346928, -0.485623], // constitucion
+							[38.346215, -0.485075], // duque de zaragoza
+							[38.346229, -0.484940],
+							[38.346413, -0.484372],
+							[38.345968, -0.484133], // rambla
+							[38.344577, -0.483343],
+							[38.344361, -0.483857], // portal elche
+							[38.344797, -0.484318], // bailen
+							[38.345801, -0.484764], // teniente alvarez soto
+							[38.345416, -0.486070], // san ildefonso
+							[38.345811, -0.486204], // bazan
+							[38.347362, -0.486823],
+							[38.347473, -0.486868], // alfonso x
+							[38.349120, -0.487502], // garcia morato
+							[38.350411, -0.488033],
+							[38.350494, -0.488246], // poeta carmelo
+							[38.350964, -0.487896],
+							[38.350875, -0.487759] // parroquia
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Parroquia de San Antonio de Padua (Franciscanos)
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza de San Antonio, 1, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle Poeta Carmelo Calvo
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Poeta Carmelo Calvo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle García Morato
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle García Morato, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle Poeta Quintana
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Poeta Quintana, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Calle del Capitán Segarra
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle del Capitán Segarra, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Avenida de Alfonso X El Sabio
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Avenida Alfonso El Sabio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Avenida de la Constitución
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Avenida de la Constitución, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle Duque de Zaragoza
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle Duque de Zaragoza, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Venia. Rambla Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Rambla Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Plaza Portal de Elche (Zona peatonal)
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Plaza Portal de Elche, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Calle Bailén
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Calle Bailén, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Calle Teniente Álvarez Soto
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Teniente Álvarez Soto, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Calle San Ildefonso
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Calle San Ildefonso, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Calle Bazán
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Bazán, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Avenida de Alfonso X El Sabio
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Avenida Alfonso El Sabio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			Calle García Morato
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Calle García Morato, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_19" class="punto_a_ruta">
+			Calle Poeta Carmelo Calvo
+		</div>
+		<script>
+			$("#ov_place_19").click(function(e){
+				show_geoloc("Calle Poeta Carmelo Calvo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_20" class="punto_a_ruta">
+			Parroquia de San Antonio de Padua (Franciscanos)
+		</div>
+		<script>
+			$("#ov_place_20").click(function(e){
+				show_geoloc("Plaza de San Antonio, 1, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

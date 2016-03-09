@@ -1,0 +1,312 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Martes Santo (Hermandad Penitencial Stabat Mater)
+			</div>
+			<div class="subtitulos_procesion">
+				22 de Marzo - Martes Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>20:15h</b> desde la Parroquia de Nuestra Señora de Gracia.
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			El trono es portado por los alumnos de 2º de bachillerato del Colegio Maristas y un grupo de costaleros fijos, formado por antiguos alumnos y padres. Desde su fundación el paso es escoltado por los "GOES", dándose el caso de que alguno de sus participantes falleció en Bosnia, en acto de servicio, realizando labores humanitarias.
+			<br>
+			Al ser uno de los pasos más grandes de la ciudad, entraña una alta dificultad los giros durante todo el recorrido, sobre todo entre las calles Ángel Lozano y Teatro.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Hermandad Penitencial Stabat Mater
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/hermandad_penitencial_stabat_mater.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta morada. Capirote y cíngulo oro viejo. Guantes blancos, zapatos y calcetines negros. </br>
+			Costaleros: Chaqueta azul marino. Pantalón gris marengo. Camisa y guanes blancos. Corbata morada. Medalla de costalero. Zapatos y calcetines negros.
+			<img src="./resources/habitos/stabat_mater.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Stabat Mater (Estaba la Madre Dolorosa al pie de la Cruz).
+		</div>
+		
+		<div class="informacion_pasos">
+			Autor: Remigio Soler
+			<br><br>
+			Las imágenes que procesionan y el trono, son obra suya.			
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida en la Parroquia de Nuestra Señora de Gracia y llega en la Plaza del Ayuntamiento.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_stabat_mater" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_stabat_mater").gmap3({
+					map:{
+						options:{
+						center:[38.344559, -0.485509],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.344721, -0.487682], data:"Nuestra Señora de Gracia"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.344721, -0.487682], // salida
+							[38.344680, -0.487937], // montañeta
+							[38.345183, -0.488118], // angel lozano
+							[38.345521, -0.487040], // teatro
+							[38.345810, -0.486225], // bazan
+							[38.346427, -0.486463], // medico pascual
+							[38.346751, -0.485500],
+							[38.346199, -0.485084], // constitucion
+							[38.346222, -0.484937], // duque zaragoza
+							[38.346356, -0.484464],
+							[38.346409, -0.484374], // rambla
+							[38.345420, -0.483848],
+							[38.344854, -0.483524],
+							[38.344246, -0.483138],
+							[38.344505, -0.482336], // altamira
+							[38.344738, -0.481901],
+							[38.345012, -0.481397],
+							[38.344991, -0.481158] // ayuntamiento
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Parroquia Nuestra Señora de Gracia
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza de la Montañeta, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Plaza de la Montañeta
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Plaza de la Montañeta, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle Ángel Lozano
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle Ángel Lozano, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle del Teatro
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle del Teatro, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Calle Bazán
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Bazán, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Calle del Médico Pascual Pérez
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle del Médico Pascual Pérez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Avenida de la Constitución
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Avenida de la Constitución, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle Duque de Zaragoza
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle Duque de Zaragoza, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Carrera Oficial
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Calle Rafael Altamira
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Calle Rafael Altamira, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Plaza del Ayuntamiento
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Plaça de Ajuntament, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

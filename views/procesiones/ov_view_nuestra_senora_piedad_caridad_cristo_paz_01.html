@@ -1,0 +1,339 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Jueves Santo (Cofradía de Nuestra Señora de la Piedad y de la Caridad y Cristo de la Paz)
+			</div>
+			<div class="subtitulos_procesion">
+				24 de Marzo - Jueves Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>20:30h</b> desde la Parroquia de San Juan Bautista (Calle Foglietti).
+			</div>
+			
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Cofradía de Nuestra Señora de la Piedad y de la Caridad y Cristo de la Paz
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/cofradia_nuestra_senora_piedad_caridad_cristo_paz.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta y capirote azul eléctrico. Capa blanca con el escudo de la cofradia. Cíngulo trenzado blanco y azul. Guantes y calcetines blancos. Zapato negro, medalla de la cofradia con cordón. </br>
+			Costaleros: Hábito monacal azul eléctrico con botones blancos. Fajín blanco con el escudo de la cofradia. Guantes y calcetines blancos. Zapato negro.
+			<img src="./resources/habitos/nuestra_senora_piedad_caridad_cristo_paz.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Cristo de la Paz
+		</div>
+		
+		<div class="informacion_pasos">
+			En el año 2000 se estrenó el Sudario de la Cruz realizado en tul y bordado de encaje granadino, donado por D. Miguel Ramos y Dña. Elvira Romero.		
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Nuestra Señora de la Piedad y Caridad.
+		</div>
+		
+		<div class="informacion_pasos">
+			La virgen estrenó en el año 2000 diademas realizadas en plata por Orfebrería Sevillana, donada por la familia Escribano Lillo.			
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida en la Parroquia de San Juan Bautista (Calle Foglietti) y llegada en la Plaza del Ayuntamiento.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_señora_piedad_cristo_paz" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_señora_piedad_cristo_paz").gmap3({
+					map:{
+						options:{
+						center:[38.343868, -0.489394],
+						zoom:15
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.340409, -0.499394], data:"Parroquia San Juan Bautista"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.340409, -0.499394], // salida
+							[38.340664, -0.499444], // foglietti
+							[38.340713, -0.498377],
+							[38.340783, -0.497194],
+							[38.340846, -0.495896],
+							[38.340863, -0.495312],
+							[38.340868, -0.494750],
+							[38.340906, -0.494098], // oscar espla
+							[38.340929, -0.493814], // reyes católicos
+							[38.340974, -0.493600],
+							[38.341327, -0.492790],
+							[38.341812, -0.491743],
+							[38.342345, -0.490509],
+							[38.342720, -0.489686],
+							[38.343140, -0.488704],
+							[38.343273, -0.488474], // plaza calvo sotelo
+							[38.343451, -0.488053],
+							[38.343535, -0.487649],
+							[38.343636, -0.487624],
+							[38.343953, -0.487703],
+							[38.344151, -0.487741], // montañeta
+							[38.344538, -0.487879],
+							[38.344896, -0.488014], // angel lozano
+							[38.345173, -0.488113],
+							[38.345414, -0.487400], // teatro
+							[38.345683, -0.486580],
+							[38.345985, -0.485691],
+							[38.346127, -0.485339], // plaza ruperto chapi
+							[38.346214, -0.484943], // duque de zaragoza
+							[38.346356, -0.484454],
+							[38.346394, -0.484360], // rambla
+							[38.345214, -0.483732],
+							[38.344695, -0.483424],
+							[38.344236, -0.483124],
+							[38.344509, -0.482330], // rafael altamira
+							[38.344737, -0.481911],
+							[38.345021, -0.481391] // ayuntamiento	
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Parroquia de San Juan Bautista
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle Foglietti, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle Foglietti
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Foglietti, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Avenida de Óscar Esplá
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Avenida de Óscar Esplá, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Calle Reyes Católicos
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Calle Reyes Católicos, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Plaza Calvo Sotelo (Sentido de la circulación)
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Plaza Calvo Sotelo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Plaza Montañeta
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Plaza Montañeta, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Calle Ángel Lozano
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Calle Ángel Lozano, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle del Teatro
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle del Teatro, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Plaza Ruperto Chapí
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Plaza Ruperto Chapí, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Calle Duque de Zaragoza
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Calle Duque de Zaragoza, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Calle Rafael Altamira
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Rafael Altamira, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Plaza del Ayuntamiento
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Plaça de Ajuntament, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

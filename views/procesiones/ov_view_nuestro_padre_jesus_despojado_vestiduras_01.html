@@ -1,0 +1,445 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Lunes Santo (Hermandad Agustina de Nuestro Padre Jesús Despojado de sus Vestiduras)
+			</div>
+			<div class="subtitulos_procesion">
+				21 de Marzo - Lunes Santo
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>19:00h</b> desde la Ermita de San Roque.
+			</div>
+			
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Hermandad Agustina de Nuestro Padre Jesús Despojado de sus Vestiduras
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/hermandad_agustina_nuestro_padre_jesus_despojado_vestiduras.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta roja. Cíngulo blanco. Capa y capirote azul. Zapatos negros.</br>
+			Costaleros: Hábito monacal azul. Cíngulo, guantes y verdugos blancos. Calcetín y zapatos negros. 
+			<img src="./resources/habitos/nuestro_padre_jesus_despojado_vestiduras.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Jesús Despojado de sus Vestiduras
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Virgen Madre del Amor y del Buen Consejo
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Cruz de los Niños
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida en la Ermita de San Roque y llegada en S.I. Concatedral de San Nicolás de Bari.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_agustina_despojado" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_agustina_despojado").gmap3({
+					map:{
+						options:{
+						center:[38.345925, -0.480772],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.347138, -0.481573], data:"Ermita de San Roque"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.347138, -0.481573], // salida
+							[38.346792, -0.480991], // lepanto
+							[38.346678, -0.480727], 
+							[38.346468, -0.480468], // plaza del puente
+							[38.346371, -0.480472], // calle toledo
+							[38.346719, -0.481104],
+							[38.346908, -0.481546],
+							[38.346664, -0.481711], // pedro sebastia
+							[38.346503, -0.481742], // quijano
+							[38.346003, -0.481661], // san agustin
+							[38.346008, -0.481243], // monjas
+							[38.346061, -0.481099], // virgen del remedio
+							[38.345792, -0.480923], // lonja
+							[38.345520, -0.481537], // santisima faz
+							[38.345370, -0.481448], // calle mayor
+							[38.345163, -0.481910],
+							[38.345434, -0.482098], // san nicolas
+							[38.346032, -0.482363],
+							[38.345953, -0.482834], // san pascual
+							[38.345848, -0.483133], // labradores
+							[38.346651, -0.483638], // san cristobal
+							[38.346870, -0.483832],
+							[38.347151, -0.483982], // primo rivera
+							[38.347753, -0.484749], // rambla
+							[38.346389, -0.484363], // rambla
+							[38.344583, -0.483347], // rambla
+							[38.344898, -0.482516], // mayor
+							[38.345238, -0.482764], // muñoz / soler
+							[38.345397, -0.482851], // plaza abad penalva
+							[38.345451, -0.482506] // concatedral
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Ermita de San Roque
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle San Roque, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle San Roque
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle San Roque, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle Lepanto
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle Lepanto, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Plaza del Puente
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Plaza del Puente, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Calle Toledo
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Toledo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Calle Pedro Sebastià
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Pedro Sebastià, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Plaza de Quijano
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Plaza de Quijano, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle San Agustín
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle San Agustín, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Calle Monjas
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Calle Monjas, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Convento RR.MM. Agustinas 20:00h (Salida Tronos Escuela Costaleros – Cruz – y Ntra. Madre del Amor y Buen Consejo).
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Plaza Virgen del Remedio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Plaza Virgen del Remedio
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Plaza Virgen del Remedio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Calle Lonja de Caballeros
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Lonja de Caballeros, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Plaza Santa Faz
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Plaza Santa Faz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Calle San Nicolás
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Calle San Nicolás, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			Calle San Pascual
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Calle San Pascual, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_19" class="punto_a_ruta">
+			Calle Labradores
+		</div>
+		<script>
+			$("#ov_place_19").click(function(e){
+				show_geoloc("Calle Labradores, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_20" class="punto_a_ruta">
+			Plaza San Cristobal
+		</div>
+		<script>
+			$("#ov_place_20").click(function(e){
+				show_geoloc("Plaza San Cristobal, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_21" class="punto_a_ruta">
+			Calle Mestre Martínez
+		</div>
+		<script>
+			$("#ov_place_21").click(function(e){
+				show_geoloc("Calle Mestre Martínez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_22" class="punto_a_ruta">
+			Calle General Primo de Rivera
+		</div>
+		<script>
+			$("#ov_place_22").click(function(e){
+				show_geoloc("Calle General Primo de Rivera, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_23" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_23").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_24" class="punto_a_ruta">
+			Venia 22:05h. Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_24").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_25" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_25").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_26" class="punto_a_ruta">
+			Calle Miguel Soler
+		</div>
+		<script>
+			$("#ov_place_26").click(function(e){
+				show_geoloc("Calle Miguel Soler, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_27" class="punto_a_ruta">
+			Plaza del Abad Penalva (Encuentro tronos)
+		</div>
+		<script>
+			$("#ov_place_27").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_28" class="punto_a_ruta">
+			S.I. Concatedral de San Nicolás de Bari.
+		</div>
+		<script>
+			$("#ov_place_28").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

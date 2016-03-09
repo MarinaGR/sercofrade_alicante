@@ -1,0 +1,307 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Domingo de Ramos (Cofradía del Santísimo Cristo del Hallazgo y la Virgen Dolorosa)
+			</div>
+			<div class="subtitulos_procesion">
+				20 de Marzo - Domingo de Ramos
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>19:00h</b> desde el Convento RR.HH. Capuchinas.
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			Durante las horas previas a la salida de la procesión, las HH Capuchinas oran al Cristo del Hallazgo, en signo de respeto y recuerdo a la imagen que en su día se venerase en el convento de las Capuchinas.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Cofradía del Santísimo Cristo del Hallazgo y la Virgen Dolorosa
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/cofradia_santisimo_cristo_hallazgo_virgen_dolorosa.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta y capirote morados. Capa marfil. Cíngulo y guantes blancos. Zapatos y calcetines negros.<br>
+			Costaleros Cristo: Vesta completa de la cofradía.<br>
+			Costaleros Virgen: Vesta y lazo moradas. Cíngulo y guantes blancos. Calcetines y zapatos negros.
+			<img src="./resources/habitos/santisimo_cristo_hallazgo_virgen_dolorosa.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Santo Cristo del Hallazgo
+		</div>
+		
+		<div class="subtitulo_hermandad">
+			Virgen de los Dolores
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida en el Convento RR.HH. Capuchinas y llegada en la Plaza San Cristobal.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_cristo_hallazgo_dolorosa" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_cristo_hallazgo_dolorosa").gmap3({
+					map:{
+						options:{
+						center:[38.344584, -0.485096],
+						zoom:16
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.345467, -0.485912], data:"Convento RR.HH. Capuchinas"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.345467, -0.485912], // salida
+							[38.345364, -0.486440], // cesar elguezabal
+							[38.346850, -0.487162],
+							[38.347207, -0.487283], // alfonso el sabio
+							[38.347621, -0.486083],
+							[38.346641, -0.485428], // avenida de la constitución
+							[38.346216, -0.484959], // duque de zaragoza
+							[38.345843, -0.484772],
+							[38.345966, -0.484150],
+							[38.344731, -0.483443], // rambla
+							[38.344595, -0.483320],
+							[38.344731, -0.482861], // mayor
+							[38.344955, -0.482501], // muñoz
+							[38.345390, -0.482865], // plaza abad
+							[38.345864, -0.483131], // labradores
+							[38.346429, -0.483479],
+							[38.346871, -0.483808]
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Convento RR.HH. Capuchinas
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Calle San Ildefonso, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Calle San Ildefonso
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle San Ildefonso, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle de César Elguezabal
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Carrer César Elguezabal, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Avenida Alfonso X El Sabio
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Avenida Alfonso El Sabio, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Avenida de la Constitución
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Avenida de la Constitución, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Calle Duque de Zaragoza
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle Duque de Zaragoza, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Calle Mayor
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Calle Mayor, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Calle Muñoz
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Calle Muñoz, Alicante");
+			});
+		</script>
+		<div id="ov_place_12" class="punto_a_ruta">
+			Plaza Abad Penalva
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Plaza Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Calle Labradores
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Calle Labradores, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Plaza San Cristobal
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Plaza San Cristobal, Alicante");
+			});
+		</script>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

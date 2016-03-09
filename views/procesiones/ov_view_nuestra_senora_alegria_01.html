@@ -1,0 +1,383 @@
+<!-- Volver -->
+<div  class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_3" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"/> Volver
+		</div>
+		
+		<div id="ov_back_button_4" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"/> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_3").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_4").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div class="titulos_procesion">
+				Domingo de Resurrección (Gloriosa Hermandad de Nuestra Señora de la Alegría)
+			</div>
+			<div class="subtitulos_procesion">
+				27 de Marzo - Domingo de Resurrección
+			</div>
+			<div class="subtitulos_procesion">
+				Salida a las <b>11:30h</b> desde la Basílica de Santa María.
+			</div>
+			
+		</div>
+		
+		<div class="informacion_procesion">
+			Desde el año 2000 desfilan en esta procesión Damas de Mantilla luciendo la mantilla de color crema.
+			<br>
+			Espectacular bajada del paso por las escaleras que descienden de la basílica de Santa María hasta la calle Jorge Juan.
+			<br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			ORGANIZA.
+		</div>
+		
+		<div id="ov_to_herman" class="enlace_a_hermandad">
+			Gloriosa Hermandad de Nuestra Señora de la Alegría
+		</div>
+		<script>
+			$("#ov_to_herman").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/hermandades/gloriosa_hermandad_nuestra_senora_alegria.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+		
+		<div class="titulos_hermandad">
+			TÚNICA.
+		</div>
+		
+		<div class="informacion_procesion">
+			Hermanos de fila: Vesta azul y escapulario blanco diseñado por D. José Ángel Guirao. </br>
+			Costaleros: Visten traje de Zaragüels, fajín y pañuelo azul.
+			<img src="./resources/habitos/nuestra_senora_alegria.jpg" style="display:block" class="tunica" />
+		</div>
+		
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="subtitulo_hermandad">
+			Nuestra Señora de la Alegría
+		</div>
+		
+		<div class="informacion_pasos">
+			El manto de la Virgen se confecciona todos los años con flores naturales.		
+		</div>
+		
+		<div class="titulos_hermandad">
+			RECORRIDO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Con salida en la Basílica de Santa María y llegada en el Convento de las Monjas de la Sangre.<br>
+			(El mapa no se mostrará sin una conexión a Internet activa)
+		</div>
+		
+		<div style="margin:auto;width:90%">
+		
+			<div id="mapa_nuestra_alegria" class="iframe_route"></div>
+			<script>
+			setTimeout(function() {
+				var lineSymbol = { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 2 };
+				$("#mapa_nuestra_alegria").gmap3({
+					map:{
+						options:{
+						center:[38.345049, -0.481279],
+						zoom:17
+						}
+					},
+					marker:{
+						values:[
+						{latLng:[38.346097, -0.479438], data:"Basílica de Santa María"}]
+					},
+					polyline:{
+					options:{
+						strokeColor: "#6F65D5",
+						strokeOpacity: 0.6,
+						strokeWeight: 4,
+						icons: [{icon: lineSymbol, offset: '3%'},
+								{icon: lineSymbol, offset: '10%'},
+								{icon: lineSymbol, offset: '20%'},
+								{icon: lineSymbol, offset: '30%'},
+								{icon: lineSymbol, offset: '40%'},
+								{icon: lineSymbol, offset: '50%'},
+								{icon: lineSymbol, offset: '60%'},
+								{icon: lineSymbol, offset: '70%'},
+								{icon: lineSymbol, offset: '80%'},
+								{icon: lineSymbol, offset: '90%'},
+								{icon: lineSymbol, offset: '98%'},
+								],
+						path:[
+							[38.346097, -0.479438], // salida
+							[38.346078, -0.479522], // escaleras
+							[38.345931, -0.479414], // jorge juan
+							[38.345769, -0.479787],
+							[38.345441, -0.480511],
+							[38.345336, -0.480763],
+							[38.345123, -0.481198], // ayuntamiento / encuentro
+							[38.345322, -0.480773], // jorge juan
+							[38.345160, -0.480565], // san telmo
+							[38.345016, -0.480369],
+							[38.344683, -0.479993], // puerta del mar
+							[38.344561, -0.480208],
+							[38.344442, -0.480449], // explanada españa
+							[38.344339, -0.480794],
+							[38.344235, -0.481140],
+							[38.344190, -0.481285],
+							[38.344089, -0.481508],
+							[38.343990, -0.481750],
+							[38.343876, -0.482031],
+							[38.343760, -0.482305],
+							[38.343618, -0.482626],
+							[38.343532, -0.482827], // rambla
+							[38.343657, -0.482867],
+							[38.343751, -0.482896],
+							[38.343815, -0.482920],
+							[38.343965, -0.483000],
+							[38.344075, -0.483050],
+							[38.344219, -0.483123],
+							[38.344255, -0.483145],
+							[38.344372, -0.483220],
+							[38.344477, -0.483288],
+							[38.344578, -0.483346],
+							[38.344723, -0.483432],
+							[38.344848, -0.483509],
+							[38.344954, -0.483575],
+							[38.345031, -0.483622],
+							[38.345158, -0.483696],
+							[38.345257, -0.483756], // san jose
+							[38.345378, -0.483373],
+							[38.345521, -0.482941],
+							[38.345394, -0.482873], // abad penalva / segundo encuentro
+							[38.345238, -0.482760], // miguel soler
+							[38.345321, -0.482437],
+							[38.345386, -0.482221],
+							[38.345422, -0.482091], // san nicolás
+							[38.345688, -0.482229],
+							[38.345858, -0.482295],
+							[38.346034, -0.482368], // montengón
+							[38.346049, -0.482153],
+							[38.346072, -0.481961],
+							[38.346072, -0.481671], // san agustin
+							[38.345964, -0.481666],
+							[38.346000, -0.481395], // convento
+							[38.346042, -0.481093] // plaza virgen remedio
+						]
+						}
+					}
+				});
+			
+			},1000);
+			</script>
+		
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		
+		<div class="titulos_hermandad">
+			ITINERARIO.
+		</div>
+		
+		<div class="informacion_procesion">
+			Pulsa sobre cualquier dirección para obtener una ruta desde tu posición actual.
+			(Necesitarás una conexión a Internet activa)
+		</div>
+		
+		<div id="geoloc_map_container" style="margin:auto;width:90%;display:none">
+		
+			<iframe id="geoloc_map" class="iframe_route_02" src=""> </iframe>
+			
+			<div id="geoloc_map_text" style="font-family:'4';font-size:1.2em;color:#333;padding:10px 10px;text-align:center;">
+				Espere, calculando ruta...
+			</div>
+			
+			<div class="ov_button_01" onclick="$('#geoloc_map_container').hide()">
+				Ocultar
+			</div>
+			
+			<div class="hollow_10px"> </div>
+			
+			<div class="ov_button_01" onclick="show_geoloc(destination);">
+				Actualizar
+			</div>			
+			
+		</div>
+		
+		<div id="ov_place_1" class="punto_a_ruta">
+			Basílica de Santa María
+		</div>
+		<script>
+			$("#ov_place_1").click(function(e){
+				show_geoloc("Plaza de Santa María, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_2" class="punto_a_ruta">
+			Escaleras de la Calle Jorge Juan
+		</div>
+		<script>
+			$("#ov_place_2").click(function(e){
+				show_geoloc("Calle Jorge Juan, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_3" class="punto_a_ruta">
+			Calle Jorge Juan
+		</div>
+		<script>
+			$("#ov_place_3").click(function(e){
+				show_geoloc("Calle Jorge Juan, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_4" class="punto_a_ruta">
+			Plaza del Ayuntamiento. Encuentro con el Resucitado a las 12:00h
+		</div>
+		<script>
+			$("#ov_place_4").click(function(e){
+				show_geoloc("Plaça de Ajuntament, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_5" class="punto_a_ruta">
+			Calle Jorge Juan
+		</div>
+		<script>
+			$("#ov_place_5").click(function(e){
+				show_geoloc("Calle Jorge Juan, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_6" class="punto_a_ruta">
+			Calle San Telmo 
+		</div>
+		<script>
+			$("#ov_place_6").click(function(e){
+				show_geoloc("Calle San Telmo, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_7" class="punto_a_ruta">
+			Plaza Puerta del Mar
+		</div>
+		<script>
+			$("#ov_place_7").click(function(e){
+				show_geoloc("Plaza Puerta del Mar, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_10" class="punto_a_ruta">
+			Paseo Explanada de España
+		</div>
+		<script>
+			$("#ov_place_10").click(function(e){
+				show_geoloc("Paseo Explanada de España, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_11" class="punto_a_ruta">
+			Rambla de Méndez Núñez
+		</div>
+		<script>
+			$("#ov_place_11").click(function(e){
+				show_geoloc("Rambla de Méndez Núñez, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_12" class="punto_a_ruta">
+			Calle San Jose
+		</div>
+		<script>
+			$("#ov_place_12").click(function(e){
+				show_geoloc("Calle San Jose, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_13" class="punto_a_ruta">
+			Plaza del Abad Penalva
+		</div>
+		<script>
+			$("#ov_place_13").click(function(e){
+				show_geoloc("Plaza del Abad Penalva, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_14" class="punto_a_ruta">
+			Encuentro con El Resucitado. Calle Miguel Soler
+		</div>
+		<script>
+			$("#ov_place_14").click(function(e){
+				show_geoloc("Calle Miguel Soler, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_15" class="punto_a_ruta">
+			Calle San Nicolás
+		</div>
+		<script>
+			$("#ov_place_15").click(function(e){
+				show_geoloc("Calle San Nicolás, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_16" class="punto_a_ruta">
+			Calle Montengón
+		</div>
+		<script>
+			$("#ov_place_16").click(function(e){
+				show_geoloc("Calle Montengón, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_17" class="punto_a_ruta">
+			Calle San Agustín
+		</div>
+		<script>
+			$("#ov_place_17").click(function(e){
+				show_geoloc("Calle San Agustín, Alicante");
+			});
+		</script>
+		
+		<div id="ov_place_18" class="punto_a_ruta">
+			Convento de las Monjas de la Sangre
+		</div>
+		<script>
+			$("#ov_place_18").click(function(e){
+				show_geoloc("Plaza Virgen del Remedio, Alicante");
+			});
+		</script>
+		
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

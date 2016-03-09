@@ -1,0 +1,115 @@
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
+		
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<!--<img src="./resources/escudos/cristo_morenet_patron_hombres_mar.png" class="ov_image_circle" alt=" ">-->
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Cofradía Cristo "El Morenet" Patrón de los Hombres del Mar</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="texto_hermandad">
+			<b>Socios:</b> 295. <b>Vestas:</b> 238. <b>Mantillas:</b> 32. <b>Costaleros:</b> 25.
+			<br><br>
+			Pese a su corta historia, su fundación se remonta al siglo XVIII, como Cofradía de Pescadores, con curiosos estatutos de asistencia social a favor del enfermo, de las viudas y de los huérfanos.
+		</div>
+		
+		<div class="titulos_hermandad">
+			DATOS
+		</div>
+		
+		<div class="informacion_hermandad">
+			<b>Túnica:</b><br>
+			<img src="./resources/habitos/cristo_morenet_patron_hombres_mar.jpg" style="display:block">
+			<br><br>
+			
+		</div>
+			
+		</div>
+		
+		<div class="titulos_hermandad">
+			PROCESIONES
+		</div>
+		
+		<div id="ov_to_proce" class="enlace_a_procesion">
+			Lunes Santo (Cofradía Cristo "El Morenet" Patrón de los Hombres del Mar)
+		</div>
+		<script>
+			$("#ov_to_proce").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_cristo_morenet_patron_hombres_mar_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div class="subtitulo_hermandad">
+			Cristo "El Morenet" de los Hombres del Mar
+		</div>
+		
+		<div class="informacion_pasos">
+			Autor: Antonio Carrasco Pastor
+			<br>
+			Fecha: 2000
+			<br><br>
+			En el año 2000 estrenaron la Cruz de Guía. La imagen del Cristo se puede venerar en la Ermita de la Virgen del Socorro. 
+			<br><br>
+			<img src="./resources/pasos/cristo_morenet_patron_hombres_mar.jpg" class="imagenes_pasos" />			
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	

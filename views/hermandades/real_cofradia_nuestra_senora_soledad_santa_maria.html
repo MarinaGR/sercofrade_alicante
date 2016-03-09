@@ -1,0 +1,108 @@
+<!-- Volver -->
+<div style="display: block;" class="ov_back_button_container">
+	
+	<div class="ov_back_button_container_limited">
+		<div id="ov_back_button_5" class="ov_back_button_1">
+			<img src="./resources/general_images/atras.png" style="height:15px;display:inline"> Volver
+		</div>
+		
+		<div id="ov_back_button_6" class="ov_back_button_2">
+			<img src="./resources/general_images/menu.png" style="height:15px;display:inline"> Menú
+		</div>
+	</div>
+	
+</div>
+<div class="back_hollow_filler"> </div>
+<script>
+		$("#ov_back_button_5").click(function(e){
+			
+			onBackKeyDown();
+						
+		});
+		$("#ov_back_button_6").click(function(e){
+			
+			load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/general/ov_view_main_menu.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+						
+		});		
+</script>
+<!-- Volver -->
+<div class="ov_zone_general">
+	
+	<div class="ov_zone_limited_2">
+		
+		<div class="contenedor_escudo">
+			
+			<div id="ov_large_menu_item_1" class="ov_large_menu_item">
+			
+				<div class="ov_box_circle_images">
+					
+					<!--<img src="./resources/escudos/nuestra_senora_soledad_santa_maria.png" class="ov_image_circle" alt=" ">-->
+					
+				</div>
+				
+				<div class="ov_box_large_menu_item_title">
+					
+					<div class="ov_text_large_menu_item_01" style="color:#FFF">Real Cofradía de Nuestra Señora de la Soledad de Santa María</div>				
+					
+				</div>
+				
+				<div class="ov_clear_floats"> </div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="texto_hermandad">
+			<b>Socios:</b> 300. <b>Participan:</b> 300.
+			<br><br>
+			La Cofradía tal y como ahora la conocemos data del año 1981. A esta Hermandad pertenece S.A.R. la infanta Doña Margarita de Borbón y Borbón.
+		</div>
+		
+		<div class="titulos_hermandad">
+			DATOS
+		</div>
+		
+		<div class="informacion_hermandad">
+			<b>Túnica:</b><br>
+			<img src="./resources/habitos/nuestra_senora_soledad_santa_maria.jpg" style="display:block">
+			<br>
+			<b>Fundación:</b><br>1981.
+			<br><br>
+		</div>
+		
+		<div class="titulos_hermandad">
+			PROCESIONES
+		</div>
+		
+		<div id="ov_to_proce" class="enlace_a_procesion">
+			Viernes Santo (Real Cofradía de Nuestra Señora de la Soledad de Santa María)
+		</div>
+		<script>
+			$("#ov_to_proce").click(function(e){
+				
+				load_view({view_to_load: 'ov_view_container_02', url_to_load: './views/procesiones/ov_view_nuestra_senora_soledad_santa_maria_01.html', view_background_color: '#EBEBEB', view_background_image: 'none', view_to_hide: 'ov_view_container_01' });	
+							
+			});
+		</script>
+				
+		<div class="titulos_hermandad">
+			PASOS.
+		</div>
+		
+		<div class="hollow_10px"> </div>
+				
+		<div class="subtitulo_hermandad">
+			Nuestra Señora de la Soledad de Santa María
+		</div>
+		
+		<div class="informacion_pasos">
+			Hay que destacar el ajuar de la Virgen, formado por diversas prendas del siglo XVIII, así como una colección de joyas de dicho siglo y del XIX. La imagen estrenó en el año 2000 nuevo manto con el Escudo de la Hermandad y diversos adornos florales, y nueva diadema para la Virgen. Así mismo estrenó el Libro de Reglas, realizado por Orfebrería Sevillana en plata y terciopelo negro.			
+		</div>
+		
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>
+		<div class="hollow_10px"> </div>						
+		
+	</div>
+	
+</div>	
